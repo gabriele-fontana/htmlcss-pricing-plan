@@ -1,0 +1,40 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+
+    
+}
+
+.debug{
+    .container{
+        border: 1px solid red;
+    }
+ }
+ /* style card */
+ .card {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+ }
+ body {
+    font-family: sans-serif;
+ }
+ .offers {
+    padding-left: 15px;
+}
+.plan-description{
+    color: grey;
+    font-size: smaller;
+}
+.price{
+    font-weight: 600;
+    font-size: 2.5rem;
+    position: ;
+}
