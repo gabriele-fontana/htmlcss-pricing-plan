@@ -17,11 +17,16 @@
         border: 1px solid red;
     }
  }
+
  /* style card */
  .card {
     max-width: 300px;
     display: flex;
     flex-direction: column;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin-top: 3rem;
+    
  }
  body {
     font-family: sans-serif;
@@ -37,4 +42,29 @@
     font-weight: 600;
     font-size: 2.5rem;
     position: ;
+}
+.price-wrapper{
+    text-align: center;
+}
+.sale-wrapper{
+    font-size: 10px;
+    .sale {
+        background-color: lightgrey;
+        padding: 4px;
+        border-radius: 4px;
+    }
+}
+.card-btn{
+    width: 240px;
+    margin: 1.5rem auto;
+
+    
+    
+}
+.offers{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    .offer{
+        padding: 4px;
+    }
 }
