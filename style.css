@@ -17,19 +17,36 @@
         border: 1px solid red;
     }
  }
+/* style header */
+header{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
 
+}
+.header-wrapper p {
+    font-size: 10px;
+    color: grey;
+}
+.input-wrapper{
+    text-align: right;
+    color: grey;
+    font-size: 10px;
+}
  /* style card */
  .card {
     max-width: 300px;
     display: flex;
     flex-direction: column;
-    border: 1px solid lightgray;
-    border-radius: 10px;
-    margin-top: 3rem;
     
+    border-radius: 10px;
+    margin-top: 1rem;
+    padding: 10px;
+    box-shadow: 1px 2px 6px 4px #d8d4d454;
  }
  body {
     font-family: sans-serif;
+    padding: 10px;
  }
  .offers {
     padding-left: 15px;
