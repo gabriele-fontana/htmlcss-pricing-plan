@@ -5,18 +5,7 @@
     box-sizing:border-box;
 
 }
-.container {
-    max-width: 900px;
-    margin: 0 auto;
 
-    
-}
-
-.debug{
-    .container{
-        border: 1px solid red;
-    }
- }
 /* style header */
 header{
     display: flex;
@@ -38,21 +27,12 @@ header{
     font-size: 10px;
     align-self: flex-end;
 }
- /* style card */
- .card {
-    max-width: 300px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    flex-shrink: 0;
-    border-radius: 10px;
-    margin-top: 1rem;
-    padding: 10px;
-    box-shadow: 1px 2px 6px 4px #d8d4d454;
- }
+
+ 
  body {
     font-family: sans-serif;
     padding: 10px;
+    
  }
  .offers {
     padding-left: 15px;
@@ -71,14 +51,15 @@ header{
 }
 .sale-wrapper{
     font-size: 10px;
-    .sale {
-        background-color: lightgrey;
-        padding: 4px;
-        border-radius: 4px;
-    }
+    
+}
+.sale-wrapper .sale {
+    background-color: lightgrey;
+    padding: 4px;
+    border-radius: 4px;
 }
 .card-btn{
-    width: 240px;
+    width: 90%;
     margin: 1.5rem auto;
     border: 0px;
     border-radius:10px ;
@@ -89,15 +70,64 @@ header{
 .offers{
     margin-top: 1rem;
     margin-bottom: 1rem;
-    .offer{
-        padding: 4px;
-    }
+}
+.offers .offer{
+    padding: 4px;
 }
 .page-container{
-    max-width: 1000px;
+    max-width: 1200px;
 }
-.card-container{
+.card-container {
     display: flex;
+    justify-content: center;
+    gap: 20px;           
+    max-width: 1200px;   
+    margin: 0 auto;
+    width: 100%;
     flex-wrap: wrap;
 }
 
+/* basic and ultimate buttons */
+div.basic button,
+div.ultimate button{
+    
+    background-color:#5865F2; 
+    
+}
+div.professional{
+    background-color: #5865F2;
+    color: white;
+}
+div.professional span.sale{
+    color: black;
+}
+
+div.professional span.plan-description{
+    color: white;
+}
+
+
+.ultimate .features {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;  
+}
+.ultimate .feature {
+    flex-grow: 1;
+    flex-basis: 200px;
+    max-width: calc(50%-10px);
+    margin-bottom: 10px;    
+}
+
+.card {
+    flex-basis: 300px; 
+    flex-grow: 1;
+    flex-shrink: 1;         
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 6px 4px #d8d4d454;
+    
+    
+}
