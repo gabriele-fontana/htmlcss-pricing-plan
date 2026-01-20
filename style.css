@@ -23,9 +23,11 @@ header{
 }
 .input-wrapper{
     text-align: right;
+    display: flex;
     color: grey;
     font-size: 10px;
     align-self: flex-end;
+    align-items: center;
 }
 
  
@@ -75,17 +77,26 @@ header{
     padding: 4px;
 }
 .page-container{
-    max-width: 1200px;
-}
-.card-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;           
-    max-width: 1200px;   
+    max-width: 1000px;
     margin: 0 auto;
-    width: 100%;
-    flex-wrap: wrap;
 }
+.bi {
+    font-size: 2rem;
+    color: black;
+}
+.bi-toggle-on,
+.bi-toggle-off{
+    font-size: 1.5rem;
+    padding: 4px;
+    
+}
+.bi-toggle-off{
+    color: grey;
+}
+.professional .bi{
+    color: white;
+}
+
 
 /* basic and ultimate buttons */
 div.basic button,
@@ -93,6 +104,9 @@ div.ultimate button{
     
     background-color:#5865F2; 
     
+}
+div.professional button{
+    color: #5865F2;
 }
 div.professional{
     background-color: #5865F2;
@@ -115,10 +129,18 @@ div.professional span.plan-description{
 .ultimate .feature {
     flex-grow: 1;
     flex-basis: 200px;
-    max-width: calc(50%-10px);
+    
     margin-bottom: 10px;    
 }
-
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;           
+    max-width: 1000px;   
+    margin: 0 auto;
+    width: 100%;
+    flex-wrap: wrap;
+}
 .card {
     flex-basis: 300px; 
     flex-grow: 1;
@@ -130,4 +152,12 @@ div.professional span.plan-description{
     box-shadow: 1px 2px 6px 4px #d8d4d454;
     
     
+}
+.feature {
+    display: flex;
+    align-items: center;
+}
+.bi-check2,
+.bi-x{
+    margin-right: 0.5rem;
 }
